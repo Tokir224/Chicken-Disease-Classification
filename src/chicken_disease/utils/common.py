@@ -39,7 +39,7 @@ def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
     Args:
         path_to_directories (list): list of path of directories
-        ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
+        verbose (bool): ignore if you do not want logs.
     """
     for path in path_to_directories:
         os.makedirs(path, exist_ok=True)
@@ -71,7 +71,7 @@ def load_json(path: Path) -> ConfigBox:
     with open(path) as f:
         content = json.load(f)
 
-    logger.info(f"json file loaded succesfully from: {path}")
+    logger.info(f"json file loaded successfully from: {path}")
     return ConfigBox(content)
 
 
@@ -111,13 +111,13 @@ def get_size(path: Path) -> str:
     return f"~ {size_in_kb} KB"
 
 
-def decodeImage(imgstring, file_name):
+def decodeImage(img_string, file_name):
     """decode image
     Args:
-        imgstring (str): image as base64 string
+        img_string (str): image as base64 string
         file_name (Path): path to binary file
     """
-    imgdata = base64.b64decode(imgstring)
+    imgdata = base64.b64decode(img_string)
     with open(file_name, "wb") as f:
         f.write(imgdata)
         f.close()
