@@ -57,6 +57,10 @@ open up you local host and port
 http://127.0.0.1:8080/train
 
 
+### Visualize your model
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+
+
 # AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
