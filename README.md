@@ -25,7 +25,7 @@ Clone the repository
 ```bash
 https://github.com/Tokir224/Chicken-Disease-Classification.git
 ```
-### STEP 01- Create a conda environment after opening the repository
+### STEP 01- Create a virtual environment after opening the repository
 
 ```bash
 python=3.10.0
@@ -34,6 +34,7 @@ python=3.10.0
 ```bash
 python -m venv venv
 .\venv\Scripts\activate #window
+source venv\bin\activate
 ```
 
 
@@ -89,7 +90,7 @@ http://127.0.0.1:8080/train
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/catdog
+    - Save the URI: 
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
