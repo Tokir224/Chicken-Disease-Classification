@@ -24,12 +24,9 @@ Clone the repository
 
 ```bash
 https://github.com/Tokir224/Chicken-Disease-Classification.git
+cd Chicken-Disease-Classification
 ```
 ### STEP 01- Create a virtual environment after opening the repository
-
-```bash
-python=3.10.0
-```
 
 ```bash
 python -m venv venv
@@ -39,6 +36,7 @@ source venv\bin\activate
 
 
 ### STEP 02- install the requirements
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -48,17 +46,19 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Now,
-```bash
-open up you local host and port
-```
 
 ### STEP 03- train model
-http://127.0.0.1:8080/train
+http://127.0.0.1:8080/train #see in terminal, model training started It will take time
 
 
-### Visualize your model
+### after training completed visualize model
+```bash
 tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+```
+
+### STEP 04 - 
+http://127.0.0.1:8080  # upload image and click on predict
+
 
 
 # AWS-CICD-Deployment-with-Github-Actions
