@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Tokir224/Chicken-fecal-images-dataset/raw/main/Chicken-fecal-images.zip?download=
+  source_URL: https://github.com/Tokir224/datasets/blob/main/Chicken-fecal-images.zip?download=
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
